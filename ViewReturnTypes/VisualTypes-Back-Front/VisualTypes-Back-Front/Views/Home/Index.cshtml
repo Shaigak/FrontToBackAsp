@@ -1,0 +1,71 @@
+﻿
+@*@model List<Student>*@
+
+@*<h1>@Model.Id</h1>
+<h1>@Model.FullName</h1>
+<h1>@ViewBag.Address</h1>
+
+*@
+
+
+@*@foreach (var item in Model)
+{
+  <h1>@item.Id</h1>
+<h1>@item.FullName</h1>
+
+
+}
+*@
+
+
+
+
+
+
+
+
+
+@*<h1>Hello P135</h1>
+*@
+
+ 
+@*{
+    string[] names = (string[])ViewData["names"]; 
+}*@
+
+
+@*
+@{
+
+    int[] nums = ViewBag.numbers;
+
+}*@
+
+
+
+@*@foreach (var item in nums)
+{
+    <h1>@item</h1>
+}*@
+
+@*<h1>@ViewBag.name</h1>*@
+
+
+@model HomeViewModel 
+
+
+
+<ul>
+    @foreach (var item in Model.Students)
+    {
+        <li>@item.FullName</li>
+        <li>@item.Age</li>
+    }
+
+    <h1>@Model.Product.Name</h1>
+</ul>
+
+@*<main><h1>Index Home Page</h1></main>*@
+
+
+
